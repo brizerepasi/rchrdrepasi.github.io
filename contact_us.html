@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="contact_us.css">
+        <!--Favicon or logos-->
+        <link rel="icon" href="OIP (1).jpg">
+
+    </head>
+    <!-- body whit backgraund color-->
+    <body>
+       
+        <!-- Image -->
+        <img class="two" src="IMG_6462.JPG" width="15%" alt="logo fti unai"><br>
+
+        <h1>Contact Us</h1>
+    
+        <form action="savedata.php">
+
+            <table class="one">
+                <tr class="two">
+                    <td><label for="fname">Full Name:</label></td>
+                    <td><input type="text" id="fname" name="fname" placeholder="Please type your First Name here" size="30"><br><br></td>
+                </tr>
+
+                <tr class="three">
+                    <td> <label for="email">E-mail:</label></td>
+                    <td>  <input type="text" id="email" name="email" placeholder="Input your Email" size="30"><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fname">Username:</label></td>
+                    <td><input type="text" id="fname" name="fname" placeholder="Please type your First Name here" size="30"><br><br></td>
+                </tr>
+
+                <tr>
+                    <td> <label for="password">Password:</label></td>
+                    <td> <input  type="password" id="password" name="password" size="30"><br><br></td>
+                </tr>
+            </table>
+               
+            <label>Gender:</label>
+            <input type="radio" id="male" name="status" value="male" checked>
+            <label for="male">Male</label>
+            <input type ="radio" id="female" name="status" value="female">
+            <label for="female">female</label> <br><br>
+
+            <label>Religion:</label>
+            <select name="agama" id="">
+               <option value="islam">Islam</option>
+               <option value="kristen">Kristen</option>
+               <option value="Katholik">Katholik</option>
+               <option value="hindu">Hindu</option>
+               <option value="budha">Budha</option>
+               <option value="konghucu">konghucu</option>
+            </select>
+
+            <p>Address:</p>
+
+            <textarea name="comment" rows="2" cols="30"></textarea>
+            <br>
+
+            <p>Hobbies: </p>
+            <input type="checkbox" name="hobbies" id="basketball" value="basketball" checked>
+            <label for="basketball">Basketball</label> <br>
+            <input type="checkbox" name="hobbies" id="swimming" value="swimming">
+            <label for="swimming">Swimming</label> <br>
+            <input type="checkbox" name="hobbies" id="Watching" value="watching">
+            <label for="watching">Watching</label><br>
+            <input type="checkbox" name="hobbies" id="reading" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" name="hobbies" id="football" value="football">
+            <label for="football">Football</label><br>
+            <input type="submit" value="Save">
+            <input type="reset"  value="Reset">
+        </form>
+    </body>
+    </html>

@@ -1,0 +1,8 @@
+body {
+    background-color: silver;
+    background-image: url(bola.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100% 150%;
+    color: black;
+}

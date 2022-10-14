@@ -1,0 +1,75 @@
+body {
+    font-family: 'roboto', sans-serif;
+}
+*{
+    margin: 0; padding: 0; list-style: none; text-decoration: none;
+}
+.sidebar{
+    position: fixed; left: 0; width: 250px; height: 100%; 
+    background: #042331;
+}
+.sidebar header {
+    font-size: 22px; color: white; text-align: center; 
+    line-height: 70px; background: #063146; user-select: none;
+}
+.sidebar ul a {
+    display: block; height: 100%; width: 100; line-height: 65px;
+     font-size: 20px; color: black; padding-left: 40px; 
+    box-sizing: border-box; border-top: 1px solid rgba(255,255,255,.1); border-bottom: 1px solid black;
+    border-bottom: 1px solid black; transition: .4s ;
+}
+ul li:hover a {
+    padding-left: 50px;
+}
+.sidebar ul a i {
+    margin-right: 16px;
+}
+label #btn,label #close {
+    color: rgb(52, 58, 64);
+    font-size: 30px;
+    float: right;
+    margin-left: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+@media (max-width: 992px) {
+    label #btn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin-right: 0;
+        right: -100%;
+        top: 80px;
+        background-color: rgb(240, 246, 247, .8);
+        text-align: center;
+        transition: .5s;
+    }
+    ul li {
+        display: block;
+        line-height: 10px;
+        margin: 50px 0;
+
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    #check:checked ~ label #btn {
+        display: none;
+    }
+    #check:checked ~ label #close {
+        display: block;
+    }
+}
+.material-icons {
+    margin-left: 40px;
+}
+
+
+
